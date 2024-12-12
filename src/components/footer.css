@@ -1,0 +1,39 @@
+/* 
+
+.site-footer .site-info {
+    position: relative;
+    text-align: center;
+    padding: 35px 0px;
+    background: #222222;
+    font-weight: 500;
+    color: #ffffff;
+} */
+.site-footer .site-info .container {
+    position: initial;
+}
+
+.container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 10px;
+
+}
+.site-footer {
+    background: #433a3a;
+    color: #ffffff;
+    font-size: 30px;
+    height: 100px;
+}
+/* article, aside, footer, header, nav, section {
+    display: block;
+}
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+footer {
+    display: block;
+    unicode-bidi: isolate;
+} */

@@ -1,7 +1,8 @@
 .skills-section {
-    padding: 60px 40px;
-    height: 60vh;
-
+    padding: 100px 400px;
+    height: 80vh;
+    width: 120vh;
+    margin: auto 300px;
     background: linear-gradient(
     45deg,
     #ff9a9e,
@@ -24,7 +25,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 50px;
  
   }
   
