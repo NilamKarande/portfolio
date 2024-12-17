@@ -1,4 +1,11 @@
 /* Fullscreen header container */
+/* Enable smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+
+
 .App-header {
   height: 90vh; /* Fullscreen height */
   display: flex; /* Enable Flexbox */

@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  .projects {
+    padding: 100px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .projects-title {
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    margin-bottom: 80px;
+    border-bottom: 5px solid #ddd;
+    display: inline-block;
+    padding-bottom: 15px;
+  }
+  
+  /* Project Card Styles */
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
+  
+  .project-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 50px;
+    border: 4px solid #ddd;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeInUp 1s forwards;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.1);
+  }
+  
+  .project-card.left {
+    flex-direction: row;
+  }
+  
+  .project-card.right {
+    flex-direction: row-reverse;
+  }
+  
+  /* Content Styles */
+  .project-content {
+    max-width: 70%;
+  }
+  
+  .project-content h3 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .project-content p {
+    font-size: 1.5rem;
+    color: #666;
+    line-height: 1.8;
+    text-align: justify;
+  }
+  
+  /* Image Styles */
+  .project-image {
+    width: 550px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .project-image:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .project-card {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .project-card.right {
+      flex-direction: column;
+    }
+  
+    .project-content {
+      max-width: 100%;
+    }
+  
+    .project-image {
+      width: 100%;
+      height: auto;
+    }
+  }
+  

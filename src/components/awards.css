@@ -1,0 +1,83 @@
+.awards {
+    text-align: center;
+    padding: 3rem; /* Increased padding for better spacing */
+    
+    background-size: 200% 200%; /* Animated gradient */
+    animation: gradientMove 5s ease infinite;
+  }
+  
+  @keyframes gradientMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .awards-title {
+    font-size: 3.5rem; /* Increased title size */
+    color: #2c3e50;
+    margin-top: 5rem;
+  }
+  
+  .awards-container {
+    display: flex;
+    justify-content: center;
+    gap: 5rem; /* Increased gap for more spacing between cards */
+    flex-wrap: wrap;
+  }
+  
+  .award-card {
+    width: 450px; /* Increased card width */
+    height: 500px;
+    background: linear-gradient(120deg, #ff9a9e, #fad0c4, #fbc2eb);
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15); /* Increased shadow for a stronger 3D effect */
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+  }
+  
+  .award-card:hover {
+    background: linear-gradient(135deg, #d1c4e9, #b3e5fc);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .award-card.active {
+    background: linear-gradient(135deg, #ffe082, #ffccbc);
+  }
+  
+  .card-content {
+    padding: 6rem; /* Increased padding for better content spacing */
+    text-align: center;
+  }
+  
+  .card-content h3 {
+    font-size: 2rem; /* Increased title text size */
+    color: #34495e;
+  }
+  
+  .card-content p {
+    color: #7f8c8d;
+    font-size: 1.8rem; /* Increased paragraph text size */
+  }
+  
+  .card-content span {
+    display: block;
+    color: #95a5a6;
+    margin-top: 0.5rem;
+    font-size: 1.8rem; /* Adjusted span text size */
+  }
+  
+  .card-details {
+    background: #fef8e5;
+    padding: 1.2rem; /* Slightly increased details padding */
+    font-size: 1.1rem; /* Increased font size for details text */
+    color: #2c3e50;
+    border-top: 1px solid #dcdfe3;
+  }
+  
